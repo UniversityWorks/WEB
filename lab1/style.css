@@ -1,0 +1,196 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.site-header {
+    background-color: darkblue;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.site-title {
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px black;
+}
+
+.site-title::before {
+    content: 'the_';
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.site-title::after {
+    content: '_site';
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.page-wrapper {
+    display: flex;
+    width: 90%;
+    margin: 20px auto;
+}
+
+main {
+    flex: 3;
+    margin-right: 20px;
+}
+
+aside {
+    flex: 1;
+    background-color: #ffc;
+    padding: 10px;
+    text-align: center;
+    box-shadow: inset 0 0 10px #ccc;
+}
+
+.ad-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 24px;
+    font-weight: bold;
+    color: orange;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.grid-item {
+    border: 2px solid white;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s;
+}
+
+/* --- ОСЬ ТУТ ЗМІНИ --- */
+/* (Я припускаю, що для 4-го блоку буде img4.jpg) */
+
+.item-1 { background-image: url('images/img1.jpg'); }
+.item-2 { background-image: url('images/img2.jpg'); }
+.item-3 { background-image: url('images/img3.jpg'); }
+.item-4 { background-image: url('images/img4.jpg'); } 
+
+
+.grid-item:hover {
+    transform: scale(1.1);
+    z-index: 10;
+    box-shadow: 0 0 15px grey;
+}
+
+.text-columns {
+    display: flex;
+    gap: 10px;
+}
+
+.text-column {
+    flex: 1;
+    background: #ffffff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    height: 150px;
+    overflow-y: scroll;
+}
+
+footer {
+    background-color: darkblue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer h3 {
+    margin: 0;
+    font-size: 28px;
+}
+
+footer nav {
+    margin: 15px 0;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    margin: 0 5px;
+}
+
+footer nav a:hover {
+    background-color: #0000CD;
+}
+
+.subscribe-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.subscribe-form input[type="text"] {
+    padding: 8px;
+}
+
+.subscribe-form button {
+    padding: 8px 12px;
+    background-color: orange;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+footer p {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.fixed-bug {
+    position: fixed;
+    top: 150px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    z-index: 100;
+    transition: transform 0.5s;
+}
+
+.fixed-bug:hover {
+    transform: rotate(360deg) scale(1.2);
+}
+
+@media (max-width: 768px) {
+    
+    .page-wrapper {
+        flex-direction: column;
+    }
+
+    main {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .image-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 150px 150px 150px;
+    }
+    
+    .text-columns {
+        flex-direction: column;
+    }
+
+    .ad-text {
+        writing-mode: horizontal-tb;
+        transform: none;
+    }
+}
