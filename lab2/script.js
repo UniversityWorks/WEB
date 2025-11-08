@@ -4,8 +4,8 @@ const h1 = document.querySelector('h1');
 block.addEventListener('mousemove', function(event) {
     const rect = block.getBoundingClientRect();
     const x = event.clientX - rect.left;
-    const y = event.clientY;
-    h1.textContent = `Координати: x=${x}, y=${y}`;
+    const y = event.clientY - 32;
+  h1.textContent = `Координати: x=${x}, y=${y}`;
 });
 
 block.addEventListener('mouseleave', function() {
