@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Відстеження координат курсора</title>
+</head>
+<body>
+    
+    <h1>Координати: x=0, y=0</h1>
+    <div id="myBlock"></div>   
+     
+
+    <div class="container1">
+        <select id="list1" class="list" multiple>
+            <option>Антонченко К.В.</option>
+            <option>Богданович В.А.</option>
+            <option>Вісник А.А.</option>
+            <option>Дорожченко Н.В.</option>
+            <option>Короленко О.Т.</option>
+            <option>Маслюк І.В.</option>
+        </select>
+
+        <div class="buttons">
+            <button id="moveRight">></button>
+            <button id="moveLeft"><</button>
+        </div>
+
+        <select id="list2" class="list" multiple></select>
+    </div>
+
+    <div class="container1">
+        <textarea id="inputArea"></textarea>
+        <div id="grid"></div>
+    </div>
+
+
+    <div class="container2">
+        <div class="controls1">
+            <div class="slider-group">
+                <label for="widthRange">width:</label>
+                <input type="range" id="widthRange" min="0" max="500" value="100">
+                <span id="maxWidth">500</span>
+                <input type="number" id="widthInput" min="0" max="500" value="100">
+                
+            </div>
+            <div class="slider-group">
+                <label for="heightRange">height:</label>
+                <input type="range" id="heightRange" min="0" max="500" value="100">
+                <span id="maxHeight">500</span>
+                <input type="number" id="heightInput" min="0" max="500" value="100">
+                
+            </div>
+            <div class="slider-group">
+                <label for="rotateRange">rotate:</label>
+                <input type="range" id="rotateRange" min="0" max="360" value="0">
+                <span id="maxRotate">360</span>
+                <input type="number" id="rotateInput" min="0" max="360" value="0">
+                
+            </div>
+        </div>
+    
+        <div class="block2" id="block2"></div>
+    </div>
+        
+<script src="script.js"></script>
+</body>
+</html>
