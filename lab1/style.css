@@ -71,8 +71,6 @@ aside {
     transition: transform 0.3s;
 }
 
-/* --- ОСЬ ТУТ ЗМІНИ --- */
-/* (Я припускаю, що для 4-го блоку буде img4.jpg) */
 
 .item-1 { background-image: url('images/img1.jpg'); }
 .item-2 { background-image: url('images/img2.jpg'); }
