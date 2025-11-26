@@ -1,0 +1,42 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+    background-color: #e0f7fa;
+    color: #34495e;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather-panel {
+    background-color: #ffffff;
+    border: 2px solid #76c7c0;
+    border-radius: 8px;
+    padding: 20px;
+    width: 500px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.weather-panel h1 {
+    font-size: 1.5em;
+    color: #00796b;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.weather-info p {
+    margin: 8px 0;
+    font-size: 0.95em;
+    line-height: 1.4;
+}
+
+.temperature-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
