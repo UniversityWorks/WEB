@@ -26,7 +26,7 @@
             $population = trim(fgets($fileHandle));
             $nodes = trim(fgets($fileHandle));
 
-            if ($region !== '' && $population !== '' && $nodes !== '') {
+            if ($region !== '' && $populatinpution !== '' && $nodes !== '') {
                 $nodesPer100k = round($nodes / ($population / 100), 2);
                 echo '<tr>' .
                      '<td>' . $n++                  . '</td>' .

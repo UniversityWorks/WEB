@@ -25,7 +25,7 @@
             ?>
             
             <br>
-            <input type="submit" value="Отправить запрос">
+            <input type="submit" value="Відправити запрос">
         </form>
     </div>
 

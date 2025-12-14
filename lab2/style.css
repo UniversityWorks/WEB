@@ -40,10 +40,19 @@ h1 {
     padding: 20px;
 }
 
+.container10 {
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: deepskyblue;
+    padding: 20px;
+}
+
 /*3*/
 
 textarea {
-    width: 100px;
+    width: 100%;
     height: 100px;
 }
 

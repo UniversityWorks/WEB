@@ -166,16 +166,17 @@ footer p {
 .fixed-bug:hover {
     transform: rotate(360deg) scale(1.2);
 }
-
 @media (max-width: 768px) {
     
-    .page-wrapper {
-        flex-direction: column;
+
+    main 
+    {
+        flex: 1 1 50%; 
+        margin-right: 10px;    
     }
 
-    main {
-        margin-right: 0;
-        margin-bottom: 20px;
+    aside {
+        flex: 1 1 20%; 
     }
 
     .image-grid {
@@ -188,7 +189,7 @@ footer p {
     }
 
     .ad-text {
-        writing-mode: horizontal-tb;
+        writing-mode: horizontal-tb;         
         transform: none;
     }
 }

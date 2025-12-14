@@ -1,3 +1,4 @@
+/*xy*/
 const block = document.getElementById('myBlock');
 const h1 = document.querySelector('h1');
 
@@ -13,6 +14,7 @@ block.addEventListener('mouseleave', function() {
 });
 
 
+/*lists*/
 const list1 = document.getElementById('list1');
 const list2 = document.getElementById('list2');
 const moveRight = document.getElementById('moveRight');
@@ -40,8 +42,8 @@ moveLeft.addEventListener('click', () => {
     moveSelectedItems(list2, list1);
 });
 
-
-     const inputArea = document.getElementById('inputArea');
+/*input area*/
+    const inputArea = document.getElementById('inputArea');
     const grid = document.getElementById('grid');
 
     function generateGrid() {
